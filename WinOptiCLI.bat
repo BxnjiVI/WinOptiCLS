@@ -37,9 +37,9 @@ echo.
 set /p mainmenuinput=" [1;94m $ [0m"
 
 :: Main Menu if inputs
-if mainmenuinput==1 goto windowstweaks
-if mainmenuinput==2 goto specifichardwaretweaks
-if mainmenuinput==3 goto specificgametweaks
+if "!mainmenuinput"!==1 goto windowstweaks
+if "!mainmenuinput"!==2 goto specifichardwaretweaks
+if "!mainmenuinput"!==3 goto specificgametweaks
 
 :: Windows Tweaks Menu
 :windowstweaks
